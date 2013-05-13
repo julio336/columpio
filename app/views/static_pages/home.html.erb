@@ -1,0 +1,52 @@
+<div class="row-fluid">
+	<header>
+		<div class="span10 offset1"><%= image_tag('logo.png') %></div>
+		<nav style="display:block">
+			<ul class="pointer">
+				<li>
+					<%= link_to "Nuestro trabajo", work_path, :remote => true %>
+				</li>
+				<li>
+					<%= link_to "Comunidad", comunidad_path, :remote => true %>
+				</li>
+				<li>
+					<%= link_to "Colectivo", colectivo_path, :remote => true %>
+				</li>
+				<li>
+					<%= link_to "Esencia", esencia_path, :remote => true %>
+				</li>
+				<li>
+					<%= link_to "Contacto", "#" %>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div class="row-fluid">
+		<div style="margin-left:-44px">
+			<div class="span9 offset3" id="content">
+				<%= render 'work' %>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(function(){
+	$('.pointer li').bind('click', function(){
+		$('.pointer li > a').removeClass('active_link');
+		$(this).find('a').addClass('active_link');
+	});
+
+	$('.pointer li').bind({
+		mouseenter: function(){
+			$(this).find('a').css('border-bottom','1px dotted white');
+		},
+		mouseleave: function(){
+			$(this).find('a').css('border-bottom', 'none');
+		}
+	});
+
+
+});
+
+</script>

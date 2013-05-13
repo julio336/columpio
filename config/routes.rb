@@ -1,9 +1,14 @@
 Collective::Application.routes.draw do
    
-  root :to => 'static_pages#index'
+  root :to => 'static_pages#home'
 
 
   get "static_pages/contact"
+ # get "static_pages/home"
+  get '/comunidad', to: 'static_pages#comunidad'
+  get '/work', to: 'static_pages#work'
+  get '/colectivo', to: 'static_pages#colectivo'
+  get '/esencia', to: 'static_pages#esencia'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
