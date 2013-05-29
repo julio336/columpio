@@ -4,7 +4,7 @@ Collective::Application.routes.draw do
 
 
   get "static_pages/contact"
- # get "static_pages/home"
+  get "static_pages/index"
   get '/comunidad', to: 'static_pages#comunidad'
   get '/work', to: 'static_pages#work'
   get '/colectivo', to: 'static_pages#colectivo'

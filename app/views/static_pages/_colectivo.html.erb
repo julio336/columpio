@@ -1,3 +1,16 @@
+<div style="background-image: url(/assets/micro_carbon.png); overflow:hidden; margin-left:0%" class="row">
+	<div style="overflow:hidden" id="letter-container" class="letter-container">
+		<h2>
+			<a href="#">ColumpiARTE lo hacemos muchos...</a>
+		</h2>
+	</div>
+	<div id="container"> 
+        <div id="txtlzr">
+        	<p>mucho amor, mucho arte, mucha expresión, mucha organización, mucha música, mucha cultura, mucho diseño</p> <p>muchos corazones, muchos escenarios, mucha gente, muchas risas, muchos amigos</p><p> muchos sueños, muchas esperanzas, muchas alegrías, muchas ideas, muchos bailes, mucho compañerismo, mucho México</p>
+        </div> 
+    </div> 
+	
+</div>
 
 <div style="margin-left:0%" class="row">
 	<div class="container">
@@ -146,5 +159,15 @@ $(function(){
 		}
 	});
 });
+
+$(function() {
+	$("#letter-container h2 a").lettering();
+});
+
+$(function() {
+          var txt = $('#txtlzr'); 
+          txt.textualizer();
+          txt.textualizer('start');
+    })
 
 </script>
