@@ -303,13 +303,13 @@ header {
   left: 0;
   height: 100%;
   width: 270px;
-  background-color: #1f1f1f;
+  background-color: black;
   text-align: center;
   z-index: 4;
-  padding-top: 95px;
+  padding-top: 100px;
 
   nav {
-    margin-top: 190px;
+    margin-top: 220px;
     position: relative;
     ul{
       list-style: none;
@@ -322,17 +322,17 @@ header {
         a{
           display: inline-block;
           padding: 10px;
-          font-family: UniversLTStd47CnLtRegular;
+          font-family: "Apercu Bold", Calibri, sans-serif;
           font-weight: normal;
           font-size: 12px;
           text-transform: uppercase;
           text-decoration: none;
           letter-spacing: 2px;
-          color: #b5b5b5;
+          color: rgb(221, 221, 210);
           outline: none;
         }
         a:hover{
-          color: #fff;
+          color: rgb(54, 159, 136);
           outline: none;
           text-decoration: none;
         }
@@ -427,7 +427,7 @@ background: #333;
 }
 .letter-container h2 {
   text-align: center;
-  font-family: 'Arvo', Arial, sans-serif;
+  font-family: 'Futura', cursive;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
