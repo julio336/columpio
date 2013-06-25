@@ -394,17 +394,16 @@ header {
 .project_thumb{
   float: left;
   margin: 0 0px 0px 0px;
-  position: relative;
   text-align: left;
-  width: 246px;
+  width: 200px;
 }
 
 .cardimgcrop {
 border: none;
 margin: 0px 0px 0px 0px;
 position: relative;
-min-width: 246px;
-min-height: 168px;
+width: 200px;
+min-height: auto;
 background: #333;
 }
 
